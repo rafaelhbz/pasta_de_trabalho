@@ -1,0 +1,106 @@
+git-lfs/2.10.0 (GitHub; windows amd64; go 1.12.7; git a526ba6b)
+git version 2.25.1.windows.1
+
+$ git-lfs.exe filter-process
+Error downloading object: aula03/mobilenet_detection/MobileNetSSD_deploy.caffemodel (761c86f): Smudge error: Error downloading aula03/mobilenet_detection/MobileNetSSD_deploy.caffemodel (761c86fbae3d8361dd454f7c740a964f62975ed32f4324b8b85994edec30f6af): batch response: This repository is over its data quota. Account responsible for LFS bandwidth should purchase more data packs to restore access.
+
+This repository is over its data quota. Account responsible for LFS bandwidth should purchase more data packs to restore access.
+batch response
+github.com/git-lfs/git-lfs/errors.newWrappedError
+	d:/a/git-lfs/git-lfs/errors/types.go:198
+github.com/git-lfs/git-lfs/errors.Wrap
+	d:/a/git-lfs/git-lfs/errors/errors.go:74
+github.com/git-lfs/git-lfs/tq.(*tqClient).Batch
+	d:/a/git-lfs/git-lfs/tq/api.go:77
+github.com/git-lfs/git-lfs/tq.Batch
+	d:/a/git-lfs/git-lfs/tq/api.go:40
+github.com/git-lfs/git-lfs/tq.(*TransferQueue).enqueueAndCollectRetriesFor
+	d:/a/git-lfs/git-lfs/tq/transfer_queue.go:520
+github.com/git-lfs/git-lfs/tq.(*TransferQueue).collectBatches.func1
+	d:/a/git-lfs/git-lfs/tq/transfer_queue.go:432
+runtime.goexit
+	C:/Go1.12.7/src/runtime/asm_amd64.s:1337
+Error downloading aula03/mobilenet_detection/MobileNetSSD_deploy.caffemodel (761c86fbae3d8361dd454f7c740a964f62975ed32f4324b8b85994edec30f6af)
+github.com/git-lfs/git-lfs/errors.newWrappedError
+	d:/a/git-lfs/git-lfs/errors/types.go:198
+github.com/git-lfs/git-lfs/errors.Wrapf
+	d:/a/git-lfs/git-lfs/errors/errors.go:85
+github.com/git-lfs/git-lfs/lfs.(*GitFilter).downloadFile
+	d:/a/git-lfs/git-lfs/lfs/gitfilter_smudge.go:115
+github.com/git-lfs/git-lfs/lfs.(*GitFilter).Smudge
+	d:/a/git-lfs/git-lfs/lfs/gitfilter_smudge.go:76
+github.com/git-lfs/git-lfs/commands.smudge
+	d:/a/git-lfs/git-lfs/commands/command_smudge.go:127
+github.com/git-lfs/git-lfs/commands.filterCommand
+	d:/a/git-lfs/git-lfs/commands/command_filter_process.go:118
+github.com/spf13/cobra.(*Command).execute
+	go/pkg/mod/github.com/spf13/cobra@v0.0.3/command.go:766
+github.com/spf13/cobra.(*Command).ExecuteC
+	go/pkg/mod/github.com/spf13/cobra@v0.0.3/command.go:852
+github.com/spf13/cobra.(*Command).Execute
+	go/pkg/mod/github.com/spf13/cobra@v0.0.3/command.go:800
+github.com/git-lfs/git-lfs/commands.Run
+	d:/a/git-lfs/git-lfs/commands/run.go:97
+main.main
+	d:/a/git-lfs/git-lfs/git-lfs.go:33
+runtime.main
+	C:/Go1.12.7/src/runtime/proc.go:200
+runtime.goexit
+	C:/Go1.12.7/src/runtime/asm_amd64.s:1337
+Smudge error
+github.com/git-lfs/git-lfs/errors.newWrappedError
+	d:/a/git-lfs/git-lfs/errors/types.go:198
+github.com/git-lfs/git-lfs/errors.NewSmudgeError
+	d:/a/git-lfs/git-lfs/errors/types.go:284
+github.com/git-lfs/git-lfs/lfs.(*GitFilter).Smudge
+	d:/a/git-lfs/git-lfs/lfs/gitfilter_smudge.go:85
+github.com/git-lfs/git-lfs/commands.smudge
+	d:/a/git-lfs/git-lfs/commands/command_smudge.go:127
+github.com/git-lfs/git-lfs/commands.filterCommand
+	d:/a/git-lfs/git-lfs/commands/command_filter_process.go:118
+github.com/spf13/cobra.(*Command).execute
+	go/pkg/mod/github.com/spf13/cobra@v0.0.3/command.go:766
+github.com/spf13/cobra.(*Command).ExecuteC
+	go/pkg/mod/github.com/spf13/cobra@v0.0.3/command.go:852
+github.com/spf13/cobra.(*Command).Execute
+	go/pkg/mod/github.com/spf13/cobra@v0.0.3/command.go:800
+github.com/git-lfs/git-lfs/commands.Run
+	d:/a/git-lfs/git-lfs/commands/run.go:97
+main.main
+	d:/a/git-lfs/git-lfs/git-lfs.go:33
+runtime.main
+	C:/Go1.12.7/src/runtime/proc.go:200
+runtime.goexit
+	C:/Go1.12.7/src/runtime/asm_amd64.s:1337
+
+Current time in UTC: 
+2020-03-10 15:09:28
+
+ENV:
+LocalWorkingDir=
+LocalGitDir=
+LocalGitStorageDir=
+LocalMediaDir=lfs\objects
+LocalReferenceDirs=
+TempDir=lfs\tmp
+ConcurrentTransfers=8
+TusTransfers=false
+BasicTransfersOnly=false
+SkipDownloadErrors=false
+FetchRecentAlways=false
+FetchRecentRefsDays=7
+FetchRecentCommitsDays=0
+FetchRecentRefsIncludeRemotes=true
+PruneOffsetDays=3
+PruneVerifyRemoteAlways=false
+PruneRemoteName=origin
+LfsStorageDir=lfs
+AccessDownload=none
+AccessUpload=none
+DownloadTransfers=basic,lfs-standalone-file
+UploadTransfers=basic,lfs-standalone-file
+GIT_DIR=C:/Programação/Jupyter/robotica_copias/robot20/.git
+GIT_EXEC_PATH=C:/Insper/Git/mingw64/libexec/git-core
+
+Client IP addresses:
+fe80::30c4:5573:e9b9:2352 10.92.215.224
